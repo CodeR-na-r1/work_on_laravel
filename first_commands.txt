@@ -1,0 +1,34 @@
+mysql -h 127.0.0.1 -ur1 -pxxxx
+
+-----------------------------
+
+cd C:\Users\RR\Downloads\Works\first_laravel
+
+php artisan cache:clear
+
+composer create-project laravel/laravel first_project
+
+php artisan route:list
+
+php artisan serve
+
+php artisan make:controller MyNewController
+
+--------
+
+php artisan migrate
+php artisan migrate:rollback
+
+1>> php artisan make:migration create_tablename_table	// create_products_table (мн.ч.)
+2>> php artisan make:model Tablename	// Product (ед.ч.)
+OR>> php artisan make:model -m Product
+
+--------
+
+php artisan make:request CommentRequest
+
+--------
+
+php artisan make:event CommentCreated
+
+php artisan make:listener NewCommentNotification
